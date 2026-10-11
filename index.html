@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulse &amp; Form Studio | Boutique Fitness in Denver, CO</title>
+  <meta name="description" content="Pulse &amp; Form Studio offers expert-led boutique fitness classes in Denver, Colorado — HIIT, Pilates, Yoga, Strength &amp; Conditioning, and more. Book your free trial class today." />
+  <meta name="keywords" content="boutique fitness Denver, HIIT classes Denver, Pilates Denver, yoga Denver, personal training Denver, fitness studio Denver CO" />
+  <meta name="author" content="Pulse &amp; Form Studio" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pulseandform.example/" />
+  <meta property="og:title" content="Pulse &amp; Form Studio | Boutique Fitness in Denver, CO" />
+  <meta property="og:description" content="Expert-led boutique fitness in Denver. HIIT, Pilates, Yoga, Strength training and more. Book your free trial class today." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&amp;q=80" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Pulse &amp; Form Studio | Denver Boutique Fitness" />
+  <meta property="twitter:description" content="Expert-led boutique fitness in Denver. Book your free trial class today." />
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&amp;q=80" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Barlow+Condensed:wght@600;700;800;900&amp;display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthClub",
+    "name": "Pulse & Form Studio",
+    "description": "Boutique fitness studio in Denver offering HIIT, Pilates, Yoga, Strength & Conditioning, and personalized coaching.",
+    "url": "https://pulseandform.example",
+    "telephone": "(303) 555-0100",
+    "email": "hello@pulseandform.example",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1420 Larimer St",
+      "addressLocality": "Denver",
+      "addressRegion": "CO",
+      "postalCode": "80202",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "39.7511",
+      "longitude": "-104.9997"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "05:30", "closes": "21:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "07:00", "closes": "17:00" }
+    ],
+    "priceRange": "$$",
+    "areaServed": "Denver, Colorado"
+  }
+  </script>
+  <style>
+    :root {
+      --dark-900:#0d0d0d;--dark-800:#121212;--dark-700:#1E1E1E;--dark-600:#2a2a2a;--dark-500:#3a3a3a;
+      --light:#FFFFFF;--light-soft:#f8f8f8;--light-muted:#ebebeb;
+      --accent:#FF5722;--accent-l:#ff7043;--accent-d:#e64a19;--accent-glow:rgba(255,87,34,0.25);
+      --on-dark:#e8e8e8;--muted-dark:#9a9a9a;--on-light:#1a1a1a;--muted-light:#555555;
+      --border-dark:rgba(255,255,255,0.08);--border-light:rgba(0,0,0,0.1);
+      --font:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+      --display:'Barlow Condensed','Impact',sans-serif;
+      --shadow-sm:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+      --shadow-md:0 4px 16px rgba(0,0,0,.18);--shadow-lg:0 10px 40px rgba(0,0,0,.28);
+      --shadow-accent:0 6px 30px rgba(255,87,34,.35);
+      --r-sm:6px;--r-md:12px;--r-lg:20px;--r-full:9999px;
+      --tr:.25s cubic-bezier(.4,0,.2,1);--hh:70px;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%}
+    body{font-family:var(--font);background:var(--dark-800);color:var(--on-dark);line-height:1.6;overflow-x:hidden}
+    img{display:block;max-width:100%;height:auto}
+    a{color:inherit;text-decoration:none}
+    ul{list-style:none}
+    button{cursor:pointer;border:none;background:none;font-family:inherit}
+    ::selection{background:rgba(255,87,34,.35);color:#fff}
+    :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+    *::-webkit-scrollbar{width:7px;height:7px}
+    *::-webkit-scrollbar-track{background:var(--dark-800)}
+    *::-webkit-scrollbar-thumb{background:var(--dark-500);border-radius:9px}
+    *::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+
+    /* Utils */
+    .container{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
+    .sp{padding:80px 0}.sp-lg{padding:100px 0}
+    .slabel{font-weight:700;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+    .stitle{font-family:var(--display);font-weight:800;font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;text-transform:uppercase}
+    .stitle-dk{color:var(--light)}.stitle-lt{color:var(--on-light)}
+    .ssub{font-size:1.05rem;line-height:1.7;max-width:600px;margin-top:14px}
+    .ssub-dk{color:var(--muted-dark)}.ssub-lt{color:var(--muted-light)}
+    .tc{text-align:center}.tc .ssub{margin-left:auto;margin-right:auto}
+    .div{width:48px;height:4px;background:var(--accent);border-radius:var(--r-full);margin:16px 0 24px}
+    .div-c{margin-left:auto;margin-right:auto}
+    .skip-link{position:absolute;top:-100%;left:0;background:var(--accent);color:#fff;padding:10px 20px;font-weight:700;z-index:9999;border-radius:0 0 var(--r-sm) 0}
+    .skip-link:focus{top:0}
+
+    /* Buttons */
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:var(--r-full);font-family:var(--font);font-weight:700;font-size:.92rem;letter-spacing:.03em;transition:all var(--tr);white-space:nowrap}
+    .btn-p{background:var(--accent);color:#fff;box-shadow:var(--shadow-accent)}
+    .btn-p:hover,.btn-p:focus-visible{background:var(--accent-l);transform:translateY(-2px);box-shadow:0 10px 40px rgba(255,87,34,.5)}
+    .btn-p:active{transform:translateY(0)}
+    .btn-o{background:transparent;color:var(--light);border:2px solid rgba(255,255,255,.4)}
+    .btn-o:hover,.btn-o:focus-visible{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+    .btn-o-dk{color:var(--on-light);border:2px solid rgba(0,0,0,.25)}
+    .btn-o-dk:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+    .btn-sm{padding:10px 20px;font-size:.85rem}
+    .btn-lg{padding:17px 36px;font-size:1rem}
+
+    /* Reveal */
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .rd1{transition-delay:.1s}.rd2{transition-delay:.2s}.rd3{transition-delay:.3s}
+    .rd4{transition-delay:.4s}.rd5{transition-delay:.5s}
+
+    /* ===== HEADER ===== */
+    #hdr{position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--hh);display:flex;align-items:center;transition:background var(--tr),box-shadow var(--tr)}
+    #hdr.scrolled{background:rgba(13,13,13,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(255,255,255,.06),0 4px 20px rgba(0,0,0,.5)}
+    .nv{width:100%;max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .nv-logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+    .nv-logo-ic{width:36px;height:36px;background:var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center}
+    .nv-logo-ic svg{width:20px;height:20px}
+    .nv-logo-tx{font-family:var(--display);font-weight:800;font-size:1.25rem;letter-spacing:.03em;text-transform:uppercase;color:var(--light);line-height:1.1}
+    .nv-logo-tx span{color:var(--accent)}
+    .nv-links{display:none;align-items:center;gap:6px}
+    .nv-links a{font-weight:500;font-size:.88rem;color:rgba(255,255,255,.8);padding:6px 12px;border-radius:var(--r-sm);transition:all var(--tr)}
+    .nv-links a:hover,.nv-links a:focus-visible{color:var(--accent);background:rgba(255,87,34,.1)}
+    .hbg{display:flex;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;padding:6px;border-radius:var(--r-sm);transition:background var(--tr)}
+    .hbg:hover{background:rgba(255,255,255,.08)}
+    .hbg[aria-expanded="true"]{background:rgba(255,87,34,.15)}
+    .hbg-bar{display:block;width:100%;height:2px;background:var(--light);border-radius:var(--r-full);transition:all var(--tr);transform-origin:center}
+    .hbg[aria-expanded="true"] .hbg-bar:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .hbg[aria-expanded="true"] .hbg-bar:nth-child(2){opacity:0;transform:scaleX(0)}
+    .hbg[aria-expanded="true"] .hbg-bar:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    .nv-mob{position:fixed;top:var(--hh);left:0;right:0;background:rgba(13,13,13,.98);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:20px;border-top:1px solid var(--border-dark);display:flex;flex-direction:column;gap:6px;transform:translateY(-20px);opacity:0;pointer-events:none;transition:all var(--tr);z-index:999}
+    .nv-mob.open{transform:translateY(0);opacity:1;pointer-events:all}
+    .nv-mob a{font-weight:600;font-size:1rem;color:rgba(255,255,255,.85);padding:12px 16px;border-radius:var(--r-sm);transition:all var(--tr)}
+    .nv-mob a:hover{color:var(--accent);background:rgba(255,87,34,.1)}
+    .nv-mob .btn{margin-top:10px;justify-content:center}
+    .nv-cta{display:none}
+    @media(min-width:900px){.nv-links{display:flex}.hbg{display:none}.nv-cta{display:inline-flex}}
+
+    /* ===== HERO ===== */
+    #hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+    .h-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80&auto=format&fit=crop');background-size:cover;background-position:center 30%;transform:scale(1.05);transition:transform 8s ease-out}
+    #hero.loaded .h-bg{transform:scale(1)}
+    .h-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,10,10,.88) 0%,rgba(18,18,18,.75) 50%,rgba(10,10,10,.82) 100%)}
+    .h-bar{position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--accent),transparent)}
+    .h-cnt{position:relative;z-index:2;padding:120px 20px 80px;max-width:1200px;margin:0 auto;width:100%}
+    .h-eye{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
+    .h-eye::before{content:'';display:block;width:24px;height:2px;background:var(--accent);border-radius:var(--r-full)}
+    .h-hl{font-family:var(--display);font-weight:900;font-size:clamp(2.8rem,8vw,6rem);line-height:1.0;text-transform:uppercase;color:var(--light);letter-spacing:-.01em;max-width:800px}
+    .h-hl .ac{color:var(--accent)}
+    .h-sub{font-size:clamp(1rem,2.5vw,1.2rem);color:rgba(255,255,255,.72);line-height:1.7;max-width:540px;margin:20px 0 36px;font-weight:400}
+    .h-acts{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+    .h-scroll{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.45);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase}
+    .scroll-arr{width:24px;height:24px;border-right:2px solid rgba(255,255,255,.3);border-bottom:2px solid rgba(255,255,255,.3);transform:rotate(45deg);animation:sBounce 1.6s ease-in-out infinite}
+    @keyframes sBounce{0%,100%{transform:rotate(45deg) translateY(0)}50%{transform:rotate(45deg) translateY(6px)}}
+
+    /* ===== CLASSES ===== */
+    #classes{background:var(--dark-800)}
+    .cg{display:grid;grid-template-columns:1fr;gap:24px;margin-top:48px}
+    @media(min-width:560px){.cg{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:900px){.cg{grid-template-columns:repeat(3,1fr)}}
+    .cc{background:var(--dark-700);border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border-dark);transition:transform var(--tr),box-shadow var(--tr),border-color var(--tr);display:flex;flex-direction:column}
+    .cc:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,.5);border-color:rgba(255,87,34,.35)}
+    .cc-img{position:relative;height:200px;overflow:hidden}
+    .cc-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+    .cc:hover .cc-img img{transform:scale(1.07)}
+    .cc-int{position:absolute;top:12px;right:12px}
+    .idots{display:flex;gap:4px}
+    .idot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.25);border:1.5px solid rgba(255,255,255,.5)}
+    .idot.f{background:var(--accent);border-color:var(--accent)}
+    .cc-body{padding:22px;flex:1;display:flex;flex-direction:column}
+    .cc-lbl{font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+    .cc-title{font-family:var(--display);font-weight:700;font-size:1.35rem;color:var(--light);line-height:1.15;text-transform:uppercase;margin-bottom:10px}
+    .cc-desc{font-size:.88rem;color:var(--muted-dark);line-height:1.65;flex:1}
+    .cc-meta{display:flex;align-items:center;justify-content:space-between;margin-top:18px;padding-top:16px;border-top:1px solid var(--border-dark)}
+    .cc-dur{display:flex;align-items:center;gap:6px;font-size:.8rem;font-weight:600;color:var(--muted-dark)}
+    .cc-dur svg{width:14px;height:14px;color:var(--accent);flex-shrink:0}
+    .int-lbl{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+
+    /* ===== SCHEDULE ===== */
+    #schedule{background:var(--light)}
+    .sch-notice{display:flex;align-items:center;gap:12px;background:#fff8e1;border:1px solid #f59e0b;border-left:4px solid #f59e0b;border-radius:var(--r-md);padding:14px 18px;margin-bottom:32px;font-size:.88rem;color:#7a5c00;font-weight:600}
+    .sch-notice svg{width:18px;height:18px;flex-shrink:0;color:#f59e0b}
+    .sch-tabs{display:flex;overflow-x:auto;gap:6px;padding-bottom:4px;margin-bottom:24px;scrollbar-width:none}
+    .sch-tabs::-webkit-scrollbar{display:none}
+    .tab-btn{flex-shrink:0;padding:9px 18px;border-radius:var(--r-full);font-size:.85rem;font-weight:700;letter-spacing:.03em;background:var(--light-muted);color:var(--muted-light);transition:all var(--tr);border:2px solid transparent}
+    .tab-btn:hover{background:var(--accent);color:#fff}
+    .tab-btn.active{background:var(--accent);color:#fff;box-shadow:var(--shadow-accent)}
+    .sch-panel{display:none}
+    .sch-panel.active{display:block}
+    .sch-wrap{overflow-x:auto;border-radius:var(--r-md);border:1px solid var(--border-light);box-shadow:var(--shadow-sm)}
+    .sch-tbl{width:100%;min-width:480px;border-collapse:collapse;background:var(--light)}
+    .sch-tbl thead{background:var(--dark-800);color:var(--light)}
+    .sch-tbl thead th{padding:14px 18px;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-align:left}
+    .sch-tbl thead th:first-child{width:90px}
+    .sch-tbl tbody tr{border-bottom:1px solid var(--border-light);transition:background var(--tr)}
+    .sch-tbl tbody tr:last-child{border-bottom:none}
+    .sch-tbl tbody tr:hover{background:#fff3ee}
+    .sch-tbl td{padding:14px 18px;font-size:.88rem;color:var(--on-light);vertical-align:top}
+    .sch-tbl td:first-child{font-weight:700;color:var(--accent);white-space:nowrap}
+    .sch-slot{background:#fff3ee;border:1px solid rgba(255,87,34,.2);border-radius:var(--r-sm);padding:5px 9px;display:inline-block;font-size:.8rem;font-weight:600;color:var(--dark-800);margin:2px 0}
+    .sch-rest{font-size:.78rem;color:#aaa;font-style:italic}
+
+    /* ===== PRICING ===== */
+    #pricing{background:var(--dark-900)}
+    .pg{display:grid;grid-template-columns:1fr;gap:24px;margin-top:48px}
+    @media(min-width:768px){.pg{grid-template-columns:repeat(3,1fr);align-items:start}}
+    .pc{background:var(--dark-700);border-radius:var(--r-lg);padding:34px 28px;border:1px solid var(--border-dark);position:relative;transition:transform var(--tr),box-shadow var(--tr)}
+    .pc:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+    .pc-feat{background:var(--dark-600);border-color:var(--accent);box-shadow:0 0 0 1px var(--accent),var(--shadow-accent);transform:scale(1.025)}
+    .pc-feat:hover{transform:scale(1.025) translateY(-4px)}
+    .pc-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:5px 16px;border-radius:var(--r-full);white-space:nowrap}
+    .pc-tier{font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-dark);margin-bottom:8px}
+    .pc-name{font-family:var(--display);font-size:1.7rem;font-weight:800;color:var(--light);text-transform:uppercase;line-height:1.1;margin-bottom:18px}
+    .pc-price{margin-bottom:24px}
+    .pc-amt{font-family:var(--display);font-size:3.2rem;font-weight:900;color:var(--light);line-height:1}
+    .pc-amt .cur{font-size:1.6rem;vertical-align:super;line-height:0;margin-right:2px}
+    .pc-per{font-size:.85rem;color:var(--muted-dark);margin-top:4px}
+    .pc-div{height:1px;background:var(--border-dark);margin:22px 0}
+    .pc-feats{display:flex;flex-direction:column;gap:11px;margin-bottom:28px}
+    .pc-f{display:flex;align-items:flex-start;gap:10px;font-size:.88rem;color:var(--on-dark);line-height:1.5}
+    .pc-f svg{width:16px;height:16px;flex-shrink:0;margin-top:2px}
+    .pc-f.inc svg{color:var(--accent)}
+    .pc-f.exc{color:var(--muted-dark)}
+    .pc-f.exc svg{color:var(--dark-500)}
+    .pc-cta{width:100%;justify-content:center}
+    @media(max-width:559px){.pc-feat{transform:none}.pc-feat:hover{transform:translateY(-4px)}}
+
+    /* ===== TRAINERS ===== */
+    #trainers{background:var(--dark-800)}
+    .tg{display:grid;grid-template-columns:1fr;gap:28px;margin-top:48px}
+    @media(min-width:640px){.tg{grid-template-columns:repeat(3,1fr)}}
+    .tc-card{background:var(--dark-700);border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border-dark);transition:transform var(--tr),box-shadow var(--tr)}
+    .tc-card:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+    .tc-img{position:relative;height:280px;overflow:hidden}
+    .tc-img img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .4s ease}
+    .tc-card:hover .tc-img img{transform:scale(1.05)}
+    .tc-sbadge{position:absolute;top:14px;left:14px;background:rgba(13,13,13,.85);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.6);font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:var(--r-full);backdrop-filter:blur(4px)}
+    .tc-body{padding:22px}
+    .tc-sp{font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+    .tc-name{font-family:var(--display);font-weight:800;font-size:1.5rem;color:var(--light);text-transform:uppercase;margin-bottom:12px}
+    .tc-bio{font-size:.86rem;color:var(--muted-dark);line-height:1.65}
+    .tc-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+    .tc-tag{background:var(--dark-600);border:1px solid var(--border-dark);color:rgba(255,255,255,.6);font-size:.72rem;font-weight:600;padding:4px 10px;border-radius:var(--r-full)}
+
+    /* ===== FAQ ===== */
+    #faq{background:var(--light)}
+    .faq-list{margin-top:40px;display:flex;flex-direction:column;gap:12px;max-width:800px;margin-left:auto;margin-right:auto}
+    .faq-item{background:var(--light);border:1px solid var(--border-light);border-radius:var(--r-md);overflow:hidden;box-shadow:var(--shadow-sm);transition:box-shadow var(--tr)}
+    .faq-item.open{box-shadow:0 4px 20px rgba(255,87,34,.12);border-color:rgba(255,87,34,.3)}
+    .faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 22px;text-align:left;font-weight:700;font-size:.98rem;color:var(--on-light);background:transparent;transition:color var(--tr)}
+    .faq-q:hover{color:var(--accent)}
+    .faq-item.open .faq-q{color:var(--accent)}
+    .faq-ic{width:28px;height:28px;border-radius:50%;background:var(--light-muted);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all var(--tr)}
+    .faq-ic svg{width:14px;height:14px;transition:transform var(--tr)}
+    .faq-item.open .faq-ic{background:var(--accent);color:#fff}
+    .faq-item.open .faq-ic svg{transform:rotate(180deg);color:#fff}
+    .faq-ans{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1);padding:0 22px}
+    .faq-ans-in{font-size:.92rem;color:var(--muted-light);line-height:1.75;padding-bottom:20px}
+    .faq-item.open .faq-ans{max-height:500px}
+
+    /* ===== BOOKING ===== */
+    #booking{background:var(--dark-900)}
+    .bk-in{display:grid;grid-template-columns:1fr;gap:48px;align-items:start}
+    @media(min-width:900px){.bk-in{grid-template-columns:1fr 1fr;gap:64px}}
+    .bk-info{background:var(--dark-700);border-radius:var(--r-lg);padding:32px;border:1px solid var(--border-dark)}
+    .bk-info-title{font-family:var(--display);font-weight:800;font-size:1.6rem;color:var(--light);text-transform:uppercase;margin-bottom:8px}
+    .bk-info-sub{font-size:.9rem;color:var(--muted-dark);line-height:1.65;margin-bottom:24px}
+    .bk-perks{display:flex;flex-direction:column;gap:14px}
+    .bk-perk{display:flex;align-items:flex-start;gap:13px;font-size:.9rem;color:var(--on-dark);line-height:1.5}
+    .perk-ic{width:36px;height:36px;background:rgba(255,87,34,.12);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .perk-ic svg{width:17px;height:17px;color:var(--accent)}
+    .bk-fw{background:var(--dark-700);border-radius:var(--r-lg);padding:32px;border:1px solid var(--border-dark)}
+    .f-title{font-family:var(--display);font-weight:800;font-size:1.5rem;color:var(--light);text-transform:uppercase;margin-bottom:24px}
+    .f-grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:480px){.f-grid{grid-template-columns:1fr 1fr}.f-grid .sf{grid-column:1/-1}}
+    .f-grp{display:flex;flex-direction:column;gap:6px}
+    .f-lbl{font-size:.8rem;font-weight:700;letter-spacing:.06em;color:rgba(255,255,255,.7);text-transform:uppercase}
+    .f-in,.f-sel,.f-ta{background:var(--dark-600);border:1.5px solid var(--border-dark);border-radius:var(--r-sm);padding:12px 14px;color:var(--light);font-family:var(--font);font-size:.92rem;transition:border-color var(--tr),box-shadow var(--tr);width:100%}
+    .f-in::placeholder,.f-ta::placeholder{color:rgba(255,255,255,.3)}
+    .f-in:focus,.f-sel:focus,.f-ta:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,87,34,.18)}
+    .f-sel{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:36px;cursor:pointer}
+    .f-sel option{background:var(--dark-700)}
+    .f-ta{resize:vertical;min-height:90px}
+    .f-disc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.5;margin-top:6px}
+    .f-sub{width:100%;justify-content:center;margin-top:6px}
+    .f-ok{display:none;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.4);border-radius:var(--r-md);padding:20px;text-align:center;color:#86efac;font-weight:600;font-size:.92rem;margin-top:16px}
+
+    /* ===== LOCATION ===== */
+    #location{background:var(--dark-800)}
+    .loc-in{display:grid;grid-template-columns:1fr;gap:48px;align-items:start}
+    @media(min-width:900px){.loc-in{grid-template-columns:1fr 1fr;gap:64px}}
+    .loc-map{border-radius:var(--r-lg);overflow:hidden;background:var(--dark-700);border:1px solid var(--border-dark);aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--muted-dark)}
+    .loc-map svg{width:48px;height:48px;color:var(--accent);opacity:.6}
+    .loc-map p{font-size:.85rem;text-align:center;padding:0 20px}
+    .loc-dets{display:flex;flex-direction:column;gap:28px}
+    .loc-it{display:flex;align-items:flex-start;gap:16px}
+    .loc-ic{width:44px;height:44px;background:rgba(255,87,34,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .loc-ic svg{width:20px;height:20px;color:var(--accent)}
+    .loc-lbl{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-dark);margin-bottom:4px}
+    .loc-val{font-size:.95rem;font-weight:600;color:var(--light);line-height:1.5}
+    .loc-val a{color:var(--accent)}.loc-val a:hover{text-decoration:underline}
+    .hrs{display:grid;grid-template-columns:auto 1fr;gap:6px 20px;font-size:.9rem}
+    .hrs .day{color:var(--muted-dark);font-weight:500}.hrs .time{color:var(--light);font-weight:600}
+
+    /* ===== FOOTER ===== */
+    #footer{background:var(--dark-900);border-top:1px solid var(--border-dark)}
+    .ft-top{padding:56px 0 40px;display:grid;grid-template-columns:1fr;gap:40px}
+    @media(min-width:768px){.ft-top{grid-template-columns:1.5fr 1fr 1fr;gap:48px}}
+    .ft-logo{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+    .ft-logo-ic{width:32px;height:32px;background:var(--accent);border-radius:7px;display:flex;align-items:center;justify-content:center}
+    .ft-logo-ic svg{width:17px;height:17px}
+    .ft-logo-tx{font-family:var(--display);font-weight:800;font-size:1.1rem;text-transform:uppercase;color:var(--light);letter-spacing:.03em}
+    .ft-logo-tx span{color:var(--accent)}
+    .ft-tag{font-size:.88rem;color:var(--muted-dark);line-height:1.65;max-width:280px;margin-bottom:20px}
+    .ft-social{display:flex;gap:10px}
+    .sl{width:38px;height:38px;border-radius:8px;background:var(--dark-600);border:1px solid var(--border-dark);display:flex;align-items:center;justify-content:center;color:var(--muted-dark);transition:all var(--tr)}
+    .sl:hover{background:var(--accent);border-color:var(--accent);color:#fff;transform:translateY(-2px)}
+    .sl svg{width:17px;height:17px}
+    .ft-col-title{font-weight:700;font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;color:var(--light);margin-bottom:18px}
+    .ft-lnks{display:flex;flex-direction:column;gap:10px}
+    .ft-lnks a{font-size:.88rem;color:var(--muted-dark);transition:color var(--tr)}
+    .ft-lnks a:hover{color:var(--accent)}
+    .ft-bot{border-top:1px solid var(--border-dark);padding:22px 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px}
+    .ft-copy{font-size:.8rem;color:var(--muted-dark);line-height:1.6}
+    .ft-cred{font-size:.78rem;color:rgba(255,255,255,.35)}
+    .ft-cred strong{color:var(--accent);font-weight:700}
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ===== HEADER ===== -->
+  <header id="hdr" role="banner" aria-label="Site navigation">
+    <nav class="nv" role="navigation" aria-label="Main navigation">
+      <a href="#hero" class="nv-logo" aria-label="Pulse & Form Studio – back to top">
+        <div class="nv-logo-ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="nv-logo-tx">Pulse &amp; <span>Form</span></div>
+      </a>
+      <ul class="nv-links" role="list">
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+      <a href="#booking" class="btn btn-p btn-sm nv-cta">Book a Free Trial Class</a>
+      <button class="hbg" id="nav-hbg" aria-expanded="false" aria-controls="nav-mob" aria-label="Toggle mobile navigation">
+        <span class="hbg-bar"></span><span class="hbg-bar"></span><span class="hbg-bar"></span>
+      </button>
+    </nav>
+    <div class="nv-mob" id="nav-mob" role="menu" aria-label="Mobile navigation">
+      <a href="#classes" role="menuitem">Classes</a>
+      <a href="#schedule" role="menuitem">Schedule</a>
+      <a href="#pricing" role="menuitem">Pricing</a>
+      <a href="#trainers" role="menuitem">Trainers</a>
+      <a href="#faq" role="menuitem">FAQ</a>
+      <a href="#location" role="menuitem">Location</a>
+      <a href="#booking" class="btn btn-p" role="menuitem">Book a Free Trial Class</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" aria-labelledby="hero-hl">
+      <div class="h-bg" role="img" aria-label="Person training intensely in a modern fitness studio with weights and equipment"></div>
+      <div class="h-ov" aria-hidden="true"></div>
+      <div class="h-bar" aria-hidden="true"></div>
+      <div class="h-cnt">
+        <div class="h-eye" aria-hidden="true">Denver's Boutique Fitness Studio</div>
+        <h1 id="hero-hl" class="h-hl">Train Smarter.<br/>Move <span class="ac">Better.</span><br/>Live Stronger.</h1>
+        <p class="h-sub">Expert-led fitness classes designed to challenge every body and every level — from beginners to seasoned athletes — in the heart of Denver, Colorado.</p>
+        <div class="h-acts">
+          <a href="#booking" class="btn btn-p btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg>
+            Book a Free Trial Class
+          </a>
+          <a href="#classes" class="btn btn-o">
+            Explore Classes
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="h-scroll" aria-hidden="true"><div class="scroll-arr"></div>Scroll</div>
+    </section>
+
+    <!-- ===== CLASSES ===== -->
+    <section id="classes" class="sp" aria-labelledby="classes-title">
+      <div class="container">
+        <div class="reveal">
+          <div class="slabel">What We Offer</div>
+          <h2 id="classes-title" class="stitle stitle-dk">Our Classes</h2>
+          <div class="div"></div>
+          <p class="ssub ssub-dk">Six expertly crafted class formats to match your goals — whether you're building power, finding flow, or recovering smarter.</p>
+        </div>
+        <div class="cg">
+
+          <!-- HIIT -->
+          <article class="cc reveal rd1" aria-label="HIIT class details">
+            <div class="cc-img">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80&auto=format&fit=crop" alt="Athletes performing high-intensity interval training exercises on gym floor" loading="lazy"/>
+              <div class="cc-int" aria-label="Intensity: 5 out of 5 – Very High">
+                <div class="idots" aria-hidden="true"><div class="idot f"></div><div class="idot f"></div><div class="idot f"></div><div class="idot f"></div><div class="idot f"></div></div>
+              </div>
+            </div>
+            <div class="cc-body">
+              <div class="cc-lbl">Cardio &amp; Conditioning</div>
+              <h3 class="cc-title">High-Intensity Interval Training</h3>
+              <p class="cc-desc">Explosive bursts of max-effort exercise paired with active recovery. Burn calories, build endurance, and push your limits — all in one session.</p>
+              <div class="cc-meta">
+                <div class="cc-dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>45 min</div>
+                <span class="int-lbl" style="color:var(--accent)">Very High</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Strength -->
+          <article class="cc reveal rd2" aria-label="Strength and Conditioning class details">
+            <div class="cc-img">
+              <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&q=80&auto=format&fit=crop" alt="Person performing barbell squats in a well-equipped strength training gym" loading="lazy"/>
+              <div class="cc-int" aria-label="Intensity: 4 out of 5 – High">
+                <div class="idots" aria-hidden="true"><div class="idot f"></div><div class="idot f"></div><div class="idot f"></div><div class="idot f"></div><div class="idot"></div></div>
+              </div>
+            </div>
+            <div class="cc-body">
+              <div class="cc-lbl">Strength Training</div>
+              <h3 class="cc-title">Strength &amp; Conditioning</h3>
+              <p class="cc-desc">Progressive barbell and dumbbell programming focused on building real-world strength, muscle definition, and functional power across all major movement patterns.</p>
+              <div class="cc-meta">
+                <div class="cc-dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>60 min</div>
+                <span class="int-lbl" style="color:#f59e0b">High</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Yoga -->
+          <article class="cc reveal rd3" aria-label="Power Vinyasa Yoga class details">
+            <div class="cc-img">
+              <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=600&q=80&auto=format&fit=crop" alt="Yoga practitioner holding a warrior pose in a serene, light-filled studio" loading="lazy"/>
+              <div class="cc-int" aria-label="Intensity: 3 out of 5 – Moderate">
+                <div class="idots" aria-hidden="true"><div class="idot f"></div><div class="idot f"></div><div class="idot f"></div><div class="idot"></div><div class="idot"></div></div>
+              </div>
+            </div>
+            <div class="cc-body">
+              <div class="cc-lbl">Mind &amp; Body</div>
+              <h3 class="cc-title">Power &amp; Vinyasa Yoga Flow</h3>
+              <p class="cc-desc">A dynamic, breath-synchronized flow linking postures with intentional movement. Builds strength, improves flexibility, and cultivates body awareness and mental clarity.</p>
+              <div class="cc-meta">
+                <div class="cc-dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>60 min</div>
+                <span class="int-lbl" style="color:#6ee7b7">Moderate</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pilates -->
+          <article class="cc reveal rd1" aria-label="Pilates class details">
+            <div class="cc-img">
+              <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80&auto=format&fit=crop" alt="Instructor guiding a client through mat Pilates exercises in a clean studio" loading="lazy"/>
+              <div class="cc-int" aria-label="Intensity: 2 out of 5 – Low to Moderate">
+                <div class="idots" aria-hidden="true"><div class="idot f"></div><div class="idot f"></div><div class="idot"></div><div class="idot"></div><div class="idot"></div></div>
+              </div>
+            </div>
+            <div class="cc-body">
+              <div class="cc-lbl">Core &amp; Precision</div>
+              <h3 class="cc-title">Reformer &amp; Mat Pilates</h3>
+              <p class="cc-desc">Precision-based core and postural training using classical Pilates principles on both the reformer machine and mat. Perfect for spinal health and deep stabilization.</p>
+              <div class="cc-meta">
+                <div class="cc-dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>50 min</div>
+                <span class="int-lbl" style="color:#93c5fd">Low – Moderate</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mobility -->
+          <article class="cc reveal rd2" aria-label="Functional Mobility and Recovery class details">
+            <div class="cc-img">
+              <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=600&q=80&auto=format&fit=crop" alt="Person performing mobility stretch exercises on a yoga mat in a bright studio" loading="lazy"/>
+              <div class="cc-int" aria-label="Intensity: 1 out of 5 – Light">
+                <div class="idots" aria-hidden="true"><div class="idot f"></div><div class="idot"></div><div class="idot"></div><div class="idot"></div><div class="idot"></div></div>
+              </div>
+            </div>
+            <div class="cc-body">
+              <div class="cc-lbl">Recovery &amp; Longevity</div>
+              <h3 class="cc-title">Functional Mobility &amp; Recovery</h3>
+              <p class="cc-desc">Targeted joint mobility drills, fascial release, and movement preparation techniques to help you perform better, prevent injury, and recover with intention.</p>
+              <div class="cc-meta">
+                <div class="cc-dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>45 min</div>
+                <span class="int-lbl" style="color:#d8b4fe">Light</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bootcamp -->
+          <article class="cc reveal rd3" aria-label="Beginner Fitness Bootcamp class details">
+            <div class="cc-img">
+              <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=600&q=80&auto=format&fit=crop" alt="Group of beginners working out together in a supportive bootcamp class setting" loading="lazy"/>
+              <div class="cc-int" aria-label="Intensity: 2 out of 5 – Low to Moderate">
+                <div class="idots" aria-hidden="true"><div class="idot f"></div><div class="idot f"></div><div class="idot"></div><div class="idot"></div><div class="idot"></div></div>
+              </div>
+            </div>
+            <div class="cc-body">
+              <div class="cc-lbl">Beginner Friendly</div>
+              <h3 class="cc-title">Beginner Fitness Bootcamp</h3>
+              <p class="cc-desc">The perfect starting point for anyone new to structured fitness. Learn foundational movement patterns, build baseline conditioning, and feel genuinely supported from day one.</p>
+              <div class="cc-meta">
+                <div class="cc-dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>45 min</div>
+                <span class="int-lbl" style="color:#fca5a5">Low – Moderate</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SCHEDULE ===== -->
+    <section id="schedule" class="sp" aria-labelledby="schedule-title">
+      <div class="container">
+        <div class="reveal tc">
+          <div class="slabel">Class Times</div>
+          <h2 id="schedule-title" class="stitle stitle-lt">Weekly Schedule</h2>
+          <div class="div div-c"></div>
+          <p class="ssub ssub-lt">We run morning, afternoon, and evening sessions across the full week. Find a time that fits your life.</p>
+        </div>
+        <div style="margin-top:40px" class="reveal">
+          <div class="sch-notice" role="alert" aria-live="polite">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <span><strong>Sample Schedule — Subject to Change.</strong> Please contact us or check our social pages for the latest confirmed timetable before visiting.</span>
+          </div>
+          <div class="sch-tabs" role="tablist" aria-label="Weekly schedule days">
+            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="p-mon" id="t-mon">Mon</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="p-tue" id="t-tue">Tue</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="p-wed" id="t-wed">Wed</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="p-thu" id="t-thu">Thu</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="p-fri" id="t-fri">Fri</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="p-sat" id="t-sat">Sat</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="p-sun" id="t-sun">Sun</button>
+          </div>
+          <!-- Mon -->
+          <div class="sch-panel active" id="p-mon" role="tabpanel" aria-labelledby="t-mon">
+            <div class="sch-wrap"><table class="sch-tbl"><thead><tr><th scope="col">Time</th><th scope="col">Class</th><th scope="col">Instructor</th><th scope="col">Duration</th></tr></thead><tbody>
+              <tr><td>5:45 AM</td><td><span class="sch-slot">HIIT</span></td><td>Jordan M.</td><td>45 min</td></tr>
+              <tr><td>7:00 AM</td><td><span class="sch-slot">Strength &amp; Conditioning</span></td><td>Priya S.</td><td>60 min</td></tr>
+              <tr><td>12:00 PM</td><td><span class="sch-slot">Reformer &amp; Mat Pilates</span></td><td>Camille D.</td><td>50 min</td></tr>
+              <tr><td>5:30 PM</td><td><span class="sch-slot">HIIT</span></td><td>Jordan M.</td><td>45 min</td></tr>
+              <tr><td>7:00 PM</td><td><span class="sch-slot">Power Yoga Flow</span></td><td>Camille D.</td><td>60 min</td></tr>
+            </tbody></table></div>
+          </div>
+          <!-- Tue -->
+          <div class="sch-panel" id="p-tue" role="tabpanel" aria-labelledby="t-tue">
+            <div class="sch-wrap"><table class="sch-tbl"><thead><tr><th scope="col">Time</th><th scope="col">Class</th><th scope="col">Instructor</th><th scope="col">Duration</th></tr></thead><tbody>
+              <tr><td>6:00 AM</td><td><span class="sch-slot">Beginner Bootcamp</span></td><td>Priya S.</td><td>45 min</td></tr>
+              <tr><td>8:00 AM</td><td><span class="sch-slot">Functional Mobility</span></td><td>Jordan M.</td><td>45 min</td></tr>
+              <tr><td>12:15 PM</td><td><span class="sch-slot">Strength &amp; Conditioning</span></td><td>Priya S.</td><td>60 min</td></tr>
+              <tr><td>6:00 PM</td><td><span class="sch-slot">Reformer Pilates</span></td><td>Camille D.</td><td>50 min</td></tr>
+              <tr><td>7:30 PM</td><td><span class="sch-slot">HIIT</span></td><td>Jordan M.</td><td>45 min</td></tr>
+            </tbody></table></div>
+          </div>
+          <!-- Wed -->
+          <div class="sch-panel" id="p-wed" role="tabpanel" aria-labelledby="t-wed">
+            <div class="sch-wrap"><table class="sch-tbl"><thead><tr><th scope="col">Time</th><th scope="col">Class</th><th scope="col">Instructor</th><th scope="col">Duration</th></tr></thead><tbody>
+              <tr><td>5:45 AM</td><td><span class="sch-slot">Strength &amp; Conditioning</span></td><td>Priya S.</td><td>60 min</td></tr>
+              <tr><td>7:00 AM</td><td><span class="sch-slot">Power Yoga Flow</span></td><td>Camille D.</td><td>60 min</td></tr>
+              <tr><td>12:00 PM</td><td><span class="sch-slot">HIIT</span></td><td>Jordan M.</td><td>45 min</td></tr>
+              <tr><td>5:30 PM</td><td><span class="sch-slot">Beginner Bootcamp</span></td><td>Priya S.</td><td>45 min</td></tr>
+              <tr><td>7:00 PM</td><td><span class="sch-slot">Functional Mobility</span></td><td>Camille D.</td><td>45 min</td></tr>
+            </tbody></table></div>
+          </div>
+          <!-- Thu -->
+          <div class="sch-panel" id="p-thu" role="tabpanel" aria-labelledby="t-thu">
+            <div class="sch-wrap"><table class="sch-tbl"><thead><tr><th scope="col">Time</th><th scope="col">Class</th><th scope="col">Instructor</th><th scope="col">Duration</th></tr></thead><tbody>
+              <tr><td>6:00 AM</td><td><span class="sch-slot">HIIT</span></td><td>Jordan M.</td><td>45 min</td></tr>
+              <tr><td>8:00 AM</td><td><span class="sch-slot">Reformer Pilates</span></td><td>Camille D.</td><td>50 min</td></tr>
+              <tr><td>12:15 PM</td><td><span class="sch-slot">Power Yoga Flow</span></td><td>Camille D.</td><td>60 min</td></tr>
+              <tr><td>5:30 PM</td><td><span class="sch-slot">Strength &amp; Conditioning</span></td><td>Priya S.</td><td>60 min</td></tr>
+              <tr><td>7:15 PM</td><td><span class="sch-slot">Beginner Bootcamp</span></td><td>Priya S.</td><td>45 min</td></tr>
+            </tbody></table></div>
+          </div>
+          <!-- Fri -->
+          <div class="sch-panel" id="p-fri" role="tabpanel" aria-labelledby="t-fri">
+            <div class="sch-wrap"><table class="sch-tbl"><thead><tr><th scope="col">Time</th><th scope="col">Class</th><th scope="col">Instructor</th><th scope="col">Duration</th></tr></thead><tbody>
+              <tr><td>5:45 AM</td><td><span class="sch-slot">HIIT</span></td><td>Jordan M.</td><td>45 min</td></tr>
+              <tr><td>7:00 AM</td><td><span class="sch-slot">Strength &amp; Conditioning</span></td><td>Priya S.</td><td>60 min</td></tr>
+              <tr><td>12:00 PM</td><td><span class="sch-slot">Functional Mobility</span></td><td>Jordan M.</td><td>45 min</td></tr>
+              <tr><td>5:30 PM</td><td><span class="sch-slot">Power Yoga Flow</span></td><td>Camille D.</td><td>60 min</td></tr>
+              <tr><td>7:00 PM</td><td><span class="sch-slot">Reformer Pilates</span></td><td>Camille D.</td><td>50 min</td></tr>
+            </tbody></table></div>
+          </div>
+          <!-- Sat -->
+          <div class="sch-panel" id="p-sat" role="tabpanel" aria-labelledby="t-sat">
+            <div class="sch-wrap"><table class="sch-tbl"><thead><tr><th scope="col">Time</th><th scope="col">Class</th><th scope="col">Instructor</th><th scope="col">Duration</th></tr></thead><tbody>
+              <tr><td>7:00 AM</td><td><span class="sch-slot">HIIT</span></td><td>Jordan M.</td><td>45 min</td></tr>
+              <tr><td>8:30 AM</td><td><span class="sch-slot">Power Yoga Flow</span></td><td>Camille D.</td><td>60 min</td></tr>
+              <tr><td>10:00 AM</td><td><span class="sch-slot">Strength &amp; Conditioning</span></td><td>Priya S.</td><td>60 min</td></tr>
+              <tr><td>11:30 AM</td><td><span class="sch-slot">Beginner Bootcamp</span></td><td>Priya S.</td><td>45 min</td></tr>
+              <tr><td>1:00 PM</td><td><span class="sch-slot">Functional Mobility</span></td><td>Camille D.</td><td>45 min</td></tr>
+            </tbody></table></div>
+          </div>
+          <!-- Sun -->
+          <div class="sch-panel" id="p-sun" role="tabpanel" aria-labelledby="t-sun">
+            <div class="sch-wrap"><table class="sch-tbl"><thead><tr><th scope="col">Time</th><th scope="col">Class</th><th scope="col">Instructor</th><th scope="col">Duration</th></tr></thead><tbody>
+              <tr><td>8:00 AM</td><td><span class="sch-slot">Power Yoga Flow</span></td><td>Camille D.</td><td>60 min</td></tr>
+              <tr><td>9:30 AM</td><td><span class="sch-slot">Functional Mobility</span></td><td>Jordan M.</td><td>45 min</td></tr>
+              <tr><td>11:00 AM</td><td><span class="sch-slot">Reformer Pilates</span></td><td>Camille D.</td><td>50 min</td></tr>
+              <tr><td>—</td><td><span class="sch-rest">Studio closed after 1:00 PM</span></td><td>—</td><td>—</td></tr>
+            </tbody></table></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section id="pricing" class="sp" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="reveal tc">
+          <div class="slabel">Membership Options</div>
+          <h2 id="pricing-title" class="stitle stitle-dk">Simple, Honest Pricing</h2>
+          <div class="div div-c"></div>
+          <p class="ssub ssub-dk">Choose the plan that fits your lifestyle. No hidden fees, no long-term lock-ins on basic plans.</p>
+        </div>
+        <div class="pg">
+
+          <!-- Tier 1 -->
+          <div class="pc reveal rd1">
+            <div class="pc-tier">Tier 1</div>
+            <div class="pc-name">Basic / Drop-In</div>
+            <div class="pc-price"><div class="pc-amt"><span class="cur">$</span>22</div><div class="pc-per">per class session</div></div>
+            <div class="pc-div"></div>
+            <ul class="pc-feats" aria-label="Plan features">
+              <li class="pc-f inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Single class access</li>
+              <li class="pc-f inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Towel &amp; mat included</li>
+              <li class="pc-f inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Locker room access</li>
+              <li class="pc-f inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Book up to 24 hrs in advance</li>
+              <li class="pc-f exc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Monthly member discounts</li>
+              <li class="pc-f exc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Priority booking</li>
+            </ul>
+            <a href="#booking" class="btn btn-o-dk pc-cta">Get Started</a>
+          </div>
+
+          <!-- Tier 2 (Featured) -->
+          <div class="pc pc-feat reveal rd2" aria-label="Most popular plan">
+            <div class="pc-badge" aria-label="Most popular">⭐ Most Popular</div>
+            <div class="pc-tier" style="color:rgba(255,255,255,.5)">Tier 2</div>
+            <div class="pc-name">Unlimited Monthly</div>
+            <div class="pc-price"><div class="pc-amt"><span class="cur">$</span>119</div><div class="pc-per">per month · cancel anytime</div></div>
+            <div class="pc-div"></div>
+            <ul class="pc-feats" aria-label="Plan features">
+              <li class="pc-f inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Unlimited class access</li>
+              <li class="pc-f inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Towel, mat &amp; water included</li>
+              <li class="pc-f inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Full locker room &amp; shower access</li>
+              <li class="pc-f inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Priority booking (48 hrs advance)</li>
+              <li class="pc-f inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Member-only workshops</li>
+              <li class="pc-f exc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Personal coaching sessions</li>
+            </ul>
+            <a href="#booking" class="btn btn-p pc-cta">Choose This Plan</a>
+          </div>
+
+          <!-- Tier 3 -->
+          <div class="pc reveal rd3">
+            <div class="pc-tier">Tier 3</div>
+            <div class="pc-name">VIP All-Access</div>
+            <div class="pc-price"><div class="pc-amt"><span class="cur">$</span>249</div><div class="pc-per">per month · billed monthly</div></div>
+            <div class="pc-div"></div>
+            <ul class="pc-feats" aria-label="Plan features">
+              <li class="pc-f inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Everything in Unlimited</li>
+              <li class="pc-f inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>4× personal coaching sessions/mo</li>
+              <li class="pc-f inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Custom goal-based program design</li>
+              <li class="pc-f inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Nutrition guidance framework</li>
+              <li class="pc-f inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>VIP-only early class access</li>
+              <li class="pc-f inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Dedicated progress check-ins</li>
+            </ul>
+            <a href="#booking" class="btn btn-o-dk pc-cta">Get VIP Access</a>
+          </div>
+
+        </div>
+        <p class="reveal" style="text-align:center;margin-top:28px;font-size:.82rem;color:var(--muted-dark)">All prices are illustrative for this concept project. A free trial class is always available — no commitment required.</p>
+      </div>
+    </section>
+
+    <!-- ===== TRAINERS ===== -->
+    <section id="trainers" class="sp" aria-labelledby="trainers-title">
+      <div class="container">
+        <div class="reveal">
+          <div class="slabel">Meet the Team</div>
+          <h2 id="trainers-title" class="stitle stitle-dk">Our Instructors</h2>
+          <div class="div"></div>
+          <p class="ssub ssub-dk">Passionate, qualified coaches who bring expertise, energy, and genuine care to every single class.</p>
+        </div>
+        <div class="tg">
+
+          <!-- Jordan -->
+          <article class="tc-card reveal rd1" aria-label="Trainer profile: Jordan Mitchell">
+            <div class="tc-img">
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80&auto=format&fit=crop" alt="Fitness trainer Jordan Mitchell in athletic wear in a modern gym setting" loading="lazy"/>
+              <div class="tc-sbadge" aria-label="This is a sample profile for demonstration purposes">Sample Profile</div>
+            </div>
+            <div class="tc-body">
+              <div class="tc-sp">HIIT · Strength · Athletic Conditioning</div>
+              <h3 class="tc-name">Jordan Mitchell</h3>
+              <p class="tc-bio">With over 8 years coaching competitive athletes and everyday fitness enthusiasts, Jordan brings an evidence-based, high-energy approach to every session. Certified by NASM and NSCA, Jordan specializes in building athletic capacity and keeping workouts genuinely fun.</p>
+              <div class="tc-tags" aria-label="Certifications and specialties">
+                <span class="tc-tag">NASM-CPT</span><span class="tc-tag">NSCA-CSCS</span><span class="tc-tag">HIIT Specialist</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Priya -->
+          <article class="tc-card reveal rd2" aria-label="Trainer profile: Priya Sharma">
+            <div class="tc-img">
+              <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=600&q=80&auto=format&fit=crop" alt="Fitness trainer Priya Sharma smiling in athletic attire in a bright fitness studio" loading="lazy"/>
+              <div class="tc-sbadge" aria-label="This is a sample profile for demonstration purposes">Sample Profile</div>
+            </div>
+            <div class="tc-body">
+              <div class="tc-sp">Strength · Beginner Coaching · Bootcamp</div>
+              <h3 class="tc-name">Priya Sharma</h3>
+              <p class="tc-bio">Priya's coaching philosophy centres on making strength accessible to everyone, regardless of starting point. Her warm, encouraging style makes her especially beloved by newer gym-goers. She holds her ACSM certification and a degree in Kinesiology from CU Boulder.</p>
+              <div class="tc-tags" aria-label="Certifications and specialties">
+                <span class="tc-tag">ACSM-CPT</span><span class="tc-tag">Kinesiology BSc</span><span class="tc-tag">Beginner Specialist</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Camille -->
+          <article class="tc-card reveal rd3" aria-label="Trainer profile: Camille Duval">
+            <div class="tc-img">
+              <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=600&q=80&auto=format&fit=crop" alt="Yoga instructor Camille Duval in a peaceful yoga pose in a serene studio environment" loading="lazy"/>
+              <div class="tc-sbadge" aria-label="This is a sample profile for demonstration purposes">Sample Profile</div>
+            </div>
+            <div class="tc-body">
+              <div class="tc-sp">Yoga · Pilates · Mobility &amp; Recovery</div>
+              <h3 class="tc-name">Camille Duval</h3>
+              <p class="tc-bio">A 500-hour registered yoga teacher and certified Pilates instructor, Camille bridges mindful movement and functional fitness. Her classes are known for attention to alignment, breath, and creating space for genuine restoration after hard training.</p>
+              <div class="tc-tags" aria-label="Certifications and specialties">
+                <span class="tc-tag">RYT-500</span><span class="tc-tag">PMA-CPT</span><span class="tc-tag">Mobility Coach</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq" class="sp" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="reveal tc">
+          <div class="slabel">Common Questions</div>
+          <h2 id="faq-title" class="stitle stitle-lt">Frequently Asked</h2>
+          <div class="div div-c"></div>
+          <p class="ssub ssub-lt">Everything you need to know before your first visit. Still have questions? Give us a call.</p>
+        </div>
+        <div class="faq-list" role="list">
+
+          <div class="faq-item reveal rd1" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="fa1" id="fq1">What should I bring to my first class?<span class="faq-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+            <div class="faq-ans" id="fa1" role="region" aria-labelledby="fq1"><div class="faq-ans-in">We provide mats and towels for all classes, so you don't need to bring those. We recommend comfortable, breathable athletic wear and supportive training shoes (grip socks are great for Pilates and Yoga). Bring a full water bottle and arrive 10–15 minutes early to meet your instructor and get set up. Lockers are available for your belongings.</div></div>
+          </div>
+
+          <div class="faq-item reveal rd2" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="fa2" id="fq2">I'm a complete beginner. Will I be able to keep up?<span class="faq-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+            <div class="faq-ans" id="fa2" role="region" aria-labelledby="fq2"><div class="faq-ans-in">Absolutely — and you are always welcome here. We specifically designed our Beginner Fitness Bootcamp as a welcoming entry point, and every class includes clear modifications for all fitness levels. Our instructors always offer beginner-friendly alternatives throughout class. We strongly recommend booking our free trial class first so you can get a feel for the studio before committing.</div></div>
+          </div>
+
+          <div class="faq-item reveal rd3" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="fa3" id="fq3">What is your cancellation and late-arrival policy?<span class="faq-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+            <div class="faq-ans" id="fa3" role="region" aria-labelledby="fq3"><div class="faq-ans-in">We ask that you cancel your booking at least 6 hours before class start time so your spot can open up for members on the waitlist. Late cancellations and no-shows for drop-in bookings will forfeit the session fee. For monthly members, repeated late cancellations may result in a small fee. We understand that life happens — simply reach out and we'll always do our best to work with you.</div></div>
+          </div>
+
+          <div class="faq-item reveal rd1" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="fa4" id="fq4">Is there parking available near the studio?<span class="faq-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+            <div class="faq-ans" id="fa4" role="region" aria-labelledby="fq4"><div class="faq-ans-in">Yes! There is a paid public parking garage on Larimer Square, roughly a 2-minute walk from our front door. Street parking is also available on surrounding blocks. We're conveniently located near the 16th Street Mall, making us accessible via Denver's free MallRide bus and multiple RTD light rail stops. We also have a secure bike rack at the studio entrance for cyclists.</div></div>
+          </div>
+
+          <div class="faq-item reveal rd2" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="fa5" id="fq5">Do I need to book classes in advance?<span class="faq-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+            <div class="faq-ans" id="fa5" role="region" aria-labelledby="fq5"><div class="faq-ans-in">We highly recommend booking in advance, as our boutique classes are intentionally kept small (12–18 people max) to ensure quality of instruction. Drop-in members can book up to 24 hours ahead, while monthly and VIP members receive priority booking up to 48 hours before class. Walk-ins are welcome only if space is available on the day. Booking can be done online, via our app, or by calling the studio.</div></div>
+          </div>
+
+          <div class="faq-item reveal rd3" role="listitem">
+            <button class="faq-q" aria-expanded="false" aria-controls="fa6" id="fq6">Do you offer personal training outside of group classes?<span class="faq-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+            <div class="faq-ans" id="fa6" role="region" aria-labelledby="fq6"><div class="faq-ans-in">Yes — our VIP All-Access membership includes four one-on-one personal coaching sessions per month, plus a custom programming plan tailored to your specific goals. If you're on a different plan but interested in adding individual sessions, a-la-carte personal training packages can be purchased separately. Contact us at <a href="mailto:hello@pulseandform.example" style="color:var(--accent)">hello@pulseandform.example</a> to discuss options.</div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BOOKING ===== -->
+    <section id="booking" class="sp" aria-labelledby="booking-title">
+      <div class="container">
+        <div class="reveal tc" style="margin-bottom:48px">
+          <div class="slabel">Get Started</div>
+          <h2 id="booking-title" class="stitle stitle-dk">Book Your Free Trial Class</h2>
+          <div class="div div-c"></div>
+          <p class="ssub ssub-dk">No commitment, no credit card required. Just come in and experience what Pulse &amp; Form is all about.</p>
+        </div>
+        <div class="bk-in">
+
+          <div class="bk-info reveal rd1">
+            <h3 class="bk-info-title">What to Expect</h3>
+            <p class="bk-info-sub">Your free trial includes a full-length class of your choice, studio orientation, and a brief conversation with your instructor about your goals.</p>
+            <div class="bk-perks">
+              <div class="bk-perk">
+                <div class="perk-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <div><strong style="color:var(--light);font-size:.92rem">No cost, no obligation</strong><br/><span style="font-size:.85rem;color:var(--muted-dark)">Your first class is fully complimentary, no payment details required.</span></div>
+              </div>
+              <div class="bk-perk">
+                <div class="perk-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+                <div><strong style="color:var(--light);font-size:.92rem">Small group, personal attention</strong><br/><span style="font-size:.85rem;color:var(--muted-dark)">Boutique class sizes mean your instructor will know your name.</span></div>
+              </div>
+              <div class="bk-perk">
+                <div class="perk-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+                <div><strong style="color:var(--light);font-size:.92rem">Any class, any level</strong><br/><span style="font-size:.85rem;color:var(--muted-dark)">From beginner bootcamp to advanced HIIT — pick what excites you.</span></div>
+              </div>
+              <div class="bk-perk">
+                <div class="perk-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                <div><strong style="color:var(--light);font-size:.92rem">1420 Larimer St, Denver CO</strong><br/><span style="font-size:.85rem;color:var(--muted-dark)">Downtown Denver, near Larimer Square.</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bk-fw reveal rd2">
+            <h3 class="f-title">Reserve Your Spot</h3>
+            <form id="booking-form" novalidate aria-label="Free trial class booking form">
+              <div class="f-grid">
+                <div class="f-grp">
+                  <label class="f-lbl" for="f-name">Full Name <span aria-hidden="true" style="color:var(--accent)">*</span></label>
+                  <input class="f-in" type="text" id="f-name" name="full_name" placeholder="Jane Smith" required autocomplete="name" aria-required="true"/>
+                </div>
+                <div class="f-grp">
+                  <label class="f-lbl" for="f-email">Email Address <span aria-hidden="true" style="color:var(--accent)">*</span></label>
+                  <input class="f-in" type="email" id="f-email" name="email" placeholder="jane@email.com" required autocomplete="email" aria-required="true"/>
+                </div>
+                <div class="f-grp">
+                  <label class="f-lbl" for="f-phone">Phone Number</label>
+                  <input class="f-in" type="tel" id="f-phone" name="phone" placeholder="(720) 555-0123" autocomplete="tel"/>
+                </div>
+                <div class="f-grp">
+                  <label class="f-lbl" for="f-class">Class of Interest <span aria-hidden="true" style="color:var(--accent)">*</span></label>
+                  <select class="f-sel" id="f-class" name="class_selection" required aria-required="true">
+                    <option value="" disabled selected>Select a class…</option>
+                    <option value="hiit">High-Intensity Interval Training (HIIT)</option>
+                    <option value="strength">Strength &amp; Conditioning</option>
+                    <option value="yoga">Power &amp; Vinyasa Yoga Flow</option>
+                    <option value="pilates">Reformer &amp; Mat Pilates</option>
+                    <option value="mobility">Functional Mobility &amp; Recovery</option>
+                    <option value="bootcamp">Beginner Fitness Bootcamp</option>
+                    <option value="unsure">Not sure yet — surprise me!</option>
+                  </select>
+                </div>
+                <div class="f-grp sf">
+                  <label class="f-lbl" for="f-time">Preferred Day &amp; Time</label>
+                  <input class="f-in" type="text" id="f-time" name="preferred_time" placeholder="e.g., Tuesday morning, or weekday evenings"/>
+                </div>
+                <div class="f-grp sf">
+                  <label class="f-lbl" for="f-goal">Primary Fitness Goal</label>
+                  <select class="f-sel" id="f-goal" name="fitness_goal">
+                    <option value="" disabled selected>Select your main goal…</option>
+                    <option value="weight-loss">Weight management</option>
+                    <option value="strength">Build strength &amp; muscle</option>
+                    <option value="endurance">Improve cardiovascular endurance</option>
+                    <option value="flexibility">Increase flexibility &amp; mobility</option>
+                    <option value="stress">Stress relief &amp; mental wellness</option>
+                    <option value="overall">Overall health &amp; fitness</option>
+                    <option value="other">Other / not sure</option>
+                  </select>
+                </div>
+              </div>
+              <p class="f-disc">By submitting, you agree we may contact you about your booking. We never share your information with third parties. This form uses <a href="https://formspree.io" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Formspree</a> for delivery.</p>
+              <button type="submit" class="btn btn-p btn-lg f-sub" id="f-submit">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Book My Free Trial Class
+              </button>
+              <div class="f-ok" id="f-success" role="status" aria-live="polite">
+                <strong>You're booked in!</strong> We'll be in touch shortly to confirm your class details. We can't wait to see you at the studio.
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LOCATION ===== -->
+    <section id="location" class="sp" aria-labelledby="location-title">
+      <div class="container">
+        <div class="reveal">
+          <div class="slabel">Find Us</div>
+          <h2 id="location-title" class="stitle stitle-dk">Location &amp; Hours</h2>
+          <div class="div"></div>
+          <p class="ssub ssub-dk">Conveniently located in the heart of downtown Denver, just steps from Larimer Square.</p>
+        </div>
+        <div class="loc-in" style="margin-top:48px">
+          <div class="loc-map reveal rd1" aria-label="Map placeholder showing studio location at 1420 Larimer St, Denver, CO">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <p><strong>Pulse &amp; Form Studio</strong><br/>1420 Larimer St<br/>Denver, CO 80202<br/><br/><span style="font-size:.8rem;color:rgba(255,255,255,.3)">Interactive map would appear here in production.</span></p>
+          </div>
+          <div class="loc-dets reveal rd2">
+            <div class="loc-it">
+              <div class="loc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div><div class="loc-lbl">Studio Address</div><div class="loc-val">1420 Larimer St, Suite 100<br/>Denver, CO 80202</div></div>
+            </div>
+            <div class="loc-it">
+              <div class="loc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.06 1.18 2 2 0 012.03 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+              <div><div class="loc-lbl">Phone</div><div class="loc-val"><a href="tel:+13035550100">(303) 555-0100</a></div></div>
+            </div>
+            <div class="loc-it">
+              <div class="loc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <div><div class="loc-lbl">Email</div><div class="loc-val"><a href="mailto:hello@pulseandform.example">hello@pulseandform.example</a></div></div>
+            </div>
+            <div class="loc-it">
+              <div class="loc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+              <div>
+                <div class="loc-lbl">Studio Hours</div>
+                <div class="loc-val">
+                  <div class="hrs">
+                    <span class="day">Mon – Fri</span><span class="time">5:30 AM – 9:00 PM</span>
+                    <span class="day">Saturday</span><span class="time">7:00 AM – 5:00 PM</span>
+                    <span class="day">Sunday</span><span class="time">7:00 AM – 1:00 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="ft-top">
+        <div>
+          <a href="#hero" class="ft-logo" aria-label="Pulse & Form Studio – back to top">
+            <div class="ft-logo-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+            <div class="ft-logo-tx">Pulse &amp; <span>Form</span></div>
+          </a>
+          <p class="ft-tag">Boutique fitness for every body, every level, every goal — right in the heart of Denver, Colorado.</p>
+          <div class="ft-social" aria-label="Social media links">
+            <a href="#" class="sl" aria-label="Follow us on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="sl" aria-label="Follow us on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" class="sl" aria-label="Watch us on YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+            <a href="#" class="sl" aria-label="Follow us on TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <div class="ft-col-title">Quick Links</div>
+          <ul class="ft-lnks" role="list">
+            <li><a href="#classes">Our Classes</a></li>
+            <li><a href="#schedule">Weekly Schedule</a></li>
+            <li><a href="#pricing">Membership Pricing</a></li>
+            <li><a href="#trainers">Meet the Trainers</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#booking">Book a Free Trial</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="ft-col-title">Contact Us</div>
+          <ul class="ft-lnks" role="list" style="gap:12px">
+            <li style="color:var(--muted-dark);font-size:.88rem;line-height:1.6">1420 Larimer St, Suite 100<br/>Denver, CO 80202</li>
+            <li><a href="tel:+13035550100">(303) 555-0100</a></li>
+            <li><a href="mailto:hello@pulseandform.example">hello@pulseandform.example</a></li>
+          </ul>
+          <div style="margin-top:20px">
+            <div class="ft-col-title">Hours</div>
+            <div style="font-size:.84rem;color:var(--muted-dark);line-height:1.85">Mon–Fri: 5:30 AM – 9:00 PM<br/>Sat: 7:00 AM – 5:00 PM<br/>Sun: 7:00 AM – 1:00 PM</div>
+          </div>
+        </div>
+      </div>
+      <div class="ft-bot">
+        <p class="ft-copy">&copy; 2024 Pulse &amp; Form Studio. All rights reserved. · 1420 Larimer St, Denver, CO 80202 · This is a fictional studio created for demonstration purposes only.</p>
+        <p class="ft-cred">Concept project by <strong>Abir Hoq</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ==============================================
+       FORMSPREE ENDPOINT — replace with your real ID
+    =============================================== */
+    const FORMSPREE_ENDPOINT = "https://formspree.io/f/sample_id";
+
+    /* ==============================================
+       STICKY HEADER
+    =============================================== */
+    const hdr = document.getElementById('hdr');
+    function onScroll() { hdr.classList.toggle('scrolled', window.scrollY > 40); }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    /* ==============================================
+       HERO ENTRANCE
+    =============================================== */
+    requestAnimationFrame(() => document.getElementById('hero').classList.add('loaded'));
+
+    /* ==============================================
+       MOBILE NAV
+    =============================================== */
+    const hbg = document.getElementById('nav-hbg');
+    const mob = document.getElementById('nav-mob');
+
+    function openNav() { hbg.setAttribute('aria-expanded','true'); mob.classList.add('open'); document.body.style.overflow='hidden'; }
+    function closeNav() { hbg.setAttribute('aria-expanded','false'); mob.classList.remove('open'); document.body.style.overflow=''; }
+
+    hbg.addEventListener('click', () => hbg.getAttribute('aria-expanded')==='true' ? closeNav() : openNav());
+    mob.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
+    document.addEventListener('keydown', e => { if(e.key==='Escape' && mob.classList.contains('open')) closeNav(); });
+
+    /* ==============================================
+       SCHEDULE TABS
+    =============================================== */
+    const tabs = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.sch-panel');
+    tabs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabs.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+        panels.forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected','true');
+        const p = document.getElementById(btn.getAttribute('aria-controls'));
+        if(p) p.classList.add('active');
+      });
+    });
+
+    /* ==============================================
+       FAQ ACCORDION
+    =============================================== */
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const btn = item.querySelector('.faq-q');
+      const ans = item.querySelector('.faq-ans');
+      btn.addEventListener('click', () => {
+        const open = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(o => {
+          o.classList.remove('open');
+          o.querySelector('.faq-q').setAttribute('aria-expanded','false');
+          o.querySelector('.faq-ans').style.maxHeight = '0px';
+        });
+        if (!open) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded','true');
+          ans.style.maxHeight = ans.scrollHeight + 'px';
+        }
+      });
+    });
+
+    /* ==============================================
+       SCROLL REVEAL
+    =============================================== */
+    const ro = new IntersectionObserver(entries => {
+      entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); ro.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+    /* ==============================================
+       ACTIVE NAV HIGHLIGHT
+    =============================================== */
+    const secs = document.querySelectorAll('section[id]');
+    const navAs = document.querySelectorAll('.nv-links a');
+    const so = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if(e.isIntersecting) {
+          const id = e.target.id;
+          navAs.forEach(a => { a.style.color = a.getAttribute('href')==='#'+id ? 'var(--accent)' : ''; });
+        }
+      });
+    }, { threshold: 0.4 });
+    secs.forEach(s => so.observe(s));
+
+    /* ==============================================
+       BOOKING FORM SUBMISSION
+    =============================================== */
+    const form = document.getElementById('booking-form');
+    const submitBtn = document.getElementById('f-submit');
+    const successEl = document.getElementById('f-success');
+
+    function fieldError(id, msg) {
+      const f = document.getElementById(id);
+      f.style.borderColor = '#ef4444';
+      f.style.boxShadow = '0 0 0 3px rgba(239,68,68,.2)';
+      f.focus();
+      f.addEventListener('input', () => { f.style.borderColor = ''; f.style.boxShadow = ''; }, { once: true });
+    }
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const name = document.getElementById('f-name').value.trim();
+      const email = document.getElementById('f-email').value.trim();
+      const cls = document.getElementById('f-class').value;
+
+      if (!name) { fieldError('f-name','Please enter your full name.'); return; }
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { fieldError('f-email','Please enter a valid email address.'); return; }
+      if (!cls) { fieldError('f-class','Please select a class.'); return; }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      try {
+        const res = await fetch(FORMSPREE_ENDPOINT, {
+          method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.reset();
+          successEl.style.display = 'block';
+          submitBtn.style.display = 'none';
+          successEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else {
+          const d = await res.json();
+          alert((d.errors || []).map(er => er.message).join(', ') || 'Something went wrong. Please try again or call us directly.');
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Book My Free Trial Class';
+        }
+      } catch (err) {
+        alert('Network error. Please check your connection and try again.');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Book My Free Trial Class';
+      }
+    });
+  </script>
+</body>
+</html>
