@@ -1271,19 +1271,21 @@
       animation: fadeIn 0.3s ease forwards;
     }
 
-    .form-banner.success {
-      display: flex;
+    .form-banner.is-visible,
+    .form-banner[style*="display: block"],
+    .form-banner[style*="display: flex"] {
+      display: flex !important;
       align-items: flex-start;
       gap: 0.85rem;
+    }
+
+    .form-banner.success {
       background: rgba(16, 185, 129, 0.12);
       border: 1px solid rgba(16, 185, 129, 0.35);
       color: #34D399;
     }
 
     .form-banner.error {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.85rem;
       background: rgba(239, 68, 68, 0.12);
       border: 1px solid rgba(239, 68, 68, 0.35);
       color: #F87171;
@@ -2409,7 +2411,7 @@
 
         <div class="booking-wrapper">
           <!-- Inline Feedback Notification Banners -->
-          <div id="formSuccessBanner" class="form-banner success" role="alert">
+          <div id="formSuccessBanner" class="form-banner success" role="alert" style="display: none;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
               <polyline points="22 4 12 14.01 9 11.01"></polyline>
@@ -2420,7 +2422,7 @@
             </div>
           </div>
 
-          <div id="formErrorBanner" class="form-banner error" role="alert">
+          <div id="formErrorBanner" class="form-banner error" role="alert" style="display: none;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"></circle>
               <line x1="12" y1="8" x2="12" y2="12"></line>
